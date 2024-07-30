@@ -1,0 +1,7 @@
+<h1>All Banks</h1>
+<ul>
+    {% for bank in banks %}
+    <li><a href="{% url 'bank_details' bank.id %}">{{ bank.name }}</a></li>
+    {% endfor %}
+</ul>
+
